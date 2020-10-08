@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Buttons</title>
+    <style>
+    	body{
+    		font-family: Comic Sans MS;
+    	}
+    	.btn{
+    		background-color: teal;
+    		color: white;
+    		text-decoration: none;
+    		border:none;
+    		font-family: arial;
+    		padding: 14px 55px;
+    		font-size: 20px;
+    		outline: none;
+    		box-shadow: 0px 0px 10px teal;
+    	}
+    	.btn:hover{
+    		opacity: 0.9;
+    		cursor: pointer;
+    	}
+    	.btn-outline{
+    		background-color: white;
+    		color:teal;
+    		text-decoration: none;
+    		border:none;
+    		font-family: arial;
+    		padding: 14px 55px;
+    		font-size: 20px;
+    		outline: none;
+    		box-shadow: 0px 0px 10px teal;
+    	}
+    	.btn-outline:hover{
+    		opacity: 0.9;
+    		cursor: pointer;
+             }
+             .bs-btn{
+    		color: white;
+    		border:none;
+    		font-family: arial;
+    		padding: 14px 55px;
+    		font-size: 20px;
+    		outline: none;
+    		border-radius: 50px;
+             }
+             .primary{background-color: blue}
+              .secondary{background-color: seagreen}
+               .success{background-color: violet}
+                .warning{background-color: orange}
+                 .Danger{background-color: red}
+
+             .bs-outline{
+    		background-color: white;
+    		border:1px solid grey;
+    		border-radius: 50px;
+    		padding: 14px 55px;
+    		font-size: 20px;
+    		outline: none;
+             }
+             .outline-primary{color: blue;border-color: blue}
+             .outline-secondary{color: seagreen;border-color: seagreen}
+             .outline-success{color: violet;border-color: violet}
+             .outline-warning{color: orange;border-color: orange}
+             .outline-Danger{color: red;border-color: red}
+
+             .outline-primary:hover{
+             	background-color: blue;
+             	color: white;
+             }
+            .outline-secondary:hover{
+                background-color: seagreen;
+                color: white;
+            }
+
+
+    </style>
+</head>
+<body>
+<h1>Simple buttons</h1>
+<div>
+    <a href="#" class="btn">Link</a>
+    <button class="btn">Button</button>
+    <input class="btn" type="button" value="input">	
+</div>
+<h1>Simple Outline buttons</h1>
+<div>
+    <a href="#" class="btn-outline">Link</a>
+    <button class="btn-outline">Button</button>
+    <input class="btn-outline" type="button" value="input">	
+</div>
+<h1>bootstrap buttons</h1>
+<div>
+	<button class="bs-btn primary">primary</button>
+	<button class="bs-btn secondary">secondary</button>
+	<button class="bs-btn success">success</button>
+	<button class="bs-btn warning">warning</button>
+	<button class="bs-btn Danger">Danger</button>
+</div>
+<h1>bootstrap outline buttons</h1>
+<div>
+	<button class="bs-outline outline-primary">primary</button>
+	<button class="bs-outline outline-secondary">secondary</button>
+	<button class="bs-outline outline-success">success</button>
+	<button class="bs-outline outline-warning">warning</button>
+	<button class="bs-outline outline-Danger">Danger</button>
+</div>
+</body>
+</html>

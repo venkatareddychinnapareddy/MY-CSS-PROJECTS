@@ -1,0 +1,39 @@
+body{
+	margin: 50px;
+}
+div{
+	display: inline-block;
+	margin: 15px;
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(45deg,black,white);
+	border-radius: 50%;
+	border-top: 30px solid red;
+	border-right: 20px solid green;
+	border-left: 20px solid blue;
+	border-bottom: 30px solid orange;
+	box-shadow: 0 0 10px black;
+}
+.circle-1{
+	
+	animation: rotate-clock 1s linear infinite;
+}
+@keyframes rotate-clock{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.circle-2{
+	animation: rotate-reverse 1s linear infinite;
+}
+@keyframes rotate-reverse{
+	0%{
+		transform: rotate(360deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}

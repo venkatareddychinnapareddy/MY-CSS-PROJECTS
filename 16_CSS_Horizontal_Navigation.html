@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Horizontal Navigation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+            header , footer{
+        background-image:  url("https://thumbs.gfycat.com/SorrowfulOrdinaryAmurratsnake-size_restricted.gif");
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    footer{
+        line-height: 10px;
+    }
+        nav{
+            background-color: orange;
+            overflow: hidden;
+        }
+        nav ul{
+            list-style-type: none;
+            margin: 0;  
+            padding: 0;
+        }
+        nav li{
+            float: left;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            padding: 20px 25px;
+            display: inline-block;
+        }
+        nav a:hover{
+            background-color: orangered;
+            color: white;
+        }
+        .dropdown-list{
+        background-color: lightsalmon;
+        position: absolute;
+        display: none;
+         }
+       .dropdown-list a{
+        display: block;
+       }
+    .dropdown:hover .dropdown-list{
+        display: block;
+       }
+        aside{
+        float: left;
+        width: 200px;
+        text-align: center;
+        height: 330px;
+        overflow-y: scroll;
+    }
+    aside ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    aside a{
+        text-decoration: none;
+        color: black;
+        padding: 20px 25px;
+        display: block;
+    }
+    aside a:hover{
+        background-color: red;
+        border-radius: 50px;
+        color: white;
+    }
+    section{
+        margin-left: 200px;
+        border-left: 2px solid grey;
+        padding: 10px;
+    }
+    details{
+        background-color: darkblue;
+        margin: 5px;
+        padding: 10px;
+        color: white;
+        border-radius: 50px;
+    }
+    article{
+        background-color: gold;
+        color: black;
+        padding: 10px;
+        border-radius: 50px;
+    }
+    summary{
+        outline: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>The Venkat Brains</h1>
+    <p>An Easy Way Of Learning Present World </p>
+</header>
+<nav>
+    <ul>
+        <li>
+            <a href="#"><i class="fa fa-home"></i> HOME</a>
+        </li>
+        <li class="dropdown">   
+<a href="#"><i class="fa fa-newspaper-o"></i>News<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-list">
+                <a href="#"><i class="fa fa-soccer-ball-o"></i> Sports</a>
+                 <a href="#"><i class="fa fa-laptop"></i> Technology</a>
+                  <a href="#"><i class="fa fa-image"></i> Arts</a>
+                   <a href="#"><i class="fa fa-cog"></i> Careers</a>
+                   <a href="#"><i class="fa fa-angle-double-left"></i>Others</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#"><i class="fa fa-id-card"></i> About Us <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-list">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+        </li>
+        <li class="dropdown">
+            <a href="#"><i class="fa fa-envelope"></i> Contact Us <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-list">
+                <a href="#"><i class="fa fa-user"> 7882587428</i></a>
+                <a href="#"><i class="fa fa-user"> 7885558888</i></a>
+                <a href="#"><i class="fa fa-user"> 7884554545</i></a>
+            </div>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-graduation-cap"></i> Careers</a>
+        </li>
+         <li class="dropdown">
+            <a href="#"><i class="fa fa-book"></i> Courses <i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-list">
+                <a href="#"><i class="fa fa-coffee"></i> HTML</a>
+                 <a href="#"><i class="fa fa-code"></i> Java</a>
+                  <a href="#"><i class="fa fa-user"></i> CSS</a>
+                   <a href="#"><i class="fa fa-cog"></i> TypeScript</a>
+                   <a href="#"><i class="fa fa-pencil"></i> AJAX</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#"> <i class="fa fa-comments"></i>Feedback<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-list">
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Your Name</label>
+                </td>
+                <td>
+                   <input type="Text" size="25"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                       <label>Your Mobile Number</label>
+                </td>
+                <td>
+                     <input type="Number" min="0" max=>
+                <//td>
+            </tr>
+            <tr>
+                <td>Your Messege</td>
+                <td><textarea rows="10" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Your Rating</label>
+                </td>
+                <td>
+                     0<input type="range">10
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</div>
+</nav>
+<aside>
+        <ul>
+            <li>
+                <a href="#">HTML</a>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+            </li>
+            <li>
+                <a href="#">Javascript</a>
+            </li>
+            <li>
+                <a href="#">TypeScript</a>
+            </li>
+            <li>
+                <a href="#">JQuery</a>
+            </li>
+            <li>
+                <a href="#">AJAX</a>
+            </li>
+            <li>
+                <a href="#">Angular JS</a>
+            </li>
+        </ul>
+    </aside>
+<section>
+    <details>
+        <summary>HTML</summary>
+        <article>
+            <h2>HTML</h2>
+            <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007. It is approved by All India Council for Technical Education, New Delhi and affiliated to Jawaharlal Nehru Technological University Kakinada, Kakinada. </p>
+            <p>The college is located in the green, transgenic and rural sylvan environs of Vadlamudi, on the Guntur-Tenali highway, about 14 km from Guntur and 11 km from Tenali. The college is a virtual haven of rural quiet and idyllic beauty spread over a large area. The splendid avenue and sprawling playgrounds and the verdure in and around the campus make it one of the most preferred choices for the aspirants of Engineering studies. The college has well qualified young and experienced Ph.Ds and M.Tech staff supported by Technical Staff.</p>
+        </article>
+    </details>
+    <details>
+        <summary>CSS</summary>
+        <article>
+            <h2>CSS</h2>
+            <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007. It is approved by All India Council for Technical Education, New Delhi and affiliated to Jawaharlal Nehru Technological University Kakinada, Kakinada. </p>
+            <p>The college is located in the green, transgenic and rural sylvan environs of Vadlamudi, on the Guntur-Tenali highway, about 14 km from Guntur and 11 km from Tenali. The college is a virtual haven of rural quiet and idyllic beauty spread over a large area. The splendid avenue and sprawling playgrounds and the verdure in and around the campus make it one of the most preferred choices for the aspirants of Engineering studies. The college has well qualified young and experienced Ph.Ds and M.Tech staff supported by Technical Staff.</p>
+        </article>
+    </details>
+    <details>
+        <summary>Javascript</summary>
+        <article>
+            <h2>Javascript</h2>
+            <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007. It is approved by All India Council for Technical Education, New Delhi and affiliated to Jawaharlal Nehru Technological University Kakinada, Kakinada. </p>
+            <p>The college is located in the green, transgenic and rural sylvan environs of Vadlamudi, on the Guntur-Tenali highway, about 14 km from Guntur and 11 km from Tenali. The college is a virtual haven of rural quiet and idyllic beauty spread over a large area. The splendid avenue and sprawling playgrounds and the verdure in and around the campus make it one of the most preferred choices for the aspirants of Engineering studies. The college has well qualified young and experienced Ph.Ds and M.Tech staff supported by Technical Staff.</p>
+        </article>
+    </details>
+    <details>
+        <summary>TypeScript</summary>
+        <article>
+            <h2>TypeScript</h2>
+            <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007. It is approved by All India Council for Technical Education, New Delhi and affiliated to Jawaharlal Nehru Technological University Kakinada, Kakinada. </p>
+            <p>The college is located in the green, transgenic and rural sylvan environs of Vadlamudi, on the Guntur-Tenali highway, about 14 km from Guntur and 11 km from Tenali. The college is a virtual haven of rural quiet and idyllic beauty spread over a large area. The splendid avenue and sprawling playgrounds and the verdure in and around the campus make it one of the most preferred choices for the aspirants of Engineering studies. The college has well qualified young and experienced Ph.Ds and M.Tech staff supported by Technical Staff.</p>
+        </article>
+    </details>
+    <details>
+        <summary>JQuery</summary>
+        <article>
+            <h2>JQuery</h2>
+            <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007. It is approved by All India Council for Technical Education, New Delhi and affiliated to Jawaharlal Nehru Technological University Kakinada, Kakinada. </p>
+            <p>The college is located in the green, transgenic and rural sylvan environs of Vadlamudi, on the Guntur-Tenali highway, about 14 km from Guntur and 11 km from Tenali. The college is a virtual haven of rural quiet and idyllic beauty spread over a large area. The splendid avenue and sprawling playgrounds and the verdure in and around the campus make it one of the most preferred choices for the aspirants of Engineering studies. The college has well qualified young and experienced Ph.Ds and M.Tech staff supported by Technical Staff.</p>
+        </article>
+    </details>
+    <details>
+        <summary>AJAX</summary>
+        <article>
+            <h2>AJAX</h2>
+            <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007. It is approved by All India Council for Technical Education, New Delhi and affiliated to Jawaharlal Nehru Technological University Kakinada, Kakinada. </p>
+            <p>The college is located in the green, transgenic and rural sylvan environs of Vadlamudi, on the Guntur-Tenali highway, about 14 km from Guntur and 11 km from Tenali. The college is a virtual haven of rural quiet and idyllic beauty spread over a large area. The splendid avenue and sprawling playgrounds and the verdure in and around the campus make it one of the most preferred choices for the aspirants of Engineering studies. The college has well qualified young and experienced Ph.Ds and M.Tech staff supported by Technical Staff.</p>
+        </article>
+    </details>
+    <details>
+        <summary>Angular JS</summary>
+        <article>
+            <h2>Angular JS</h2>
+            <p>Vignan's Lara Institute of Technology & Science, was established with the aim of providing quality technical education on par with international standards at Vadlamudi, Guntur District in the year 2007. It is approved by All India Council for Technical Education, New Delhi and affiliated to Jawaharlal Nehru Technological University Kakinada, Kakinada. </p>
+            <p>The college is located in the green, transgenic and rural sylvan environs of Vadlamudi, on the Guntur-Tenali highway, about 14 km from Guntur and 11 km from Tenali. The college is a virtual haven of rural quiet and idyllic beauty spread over a large area. The splendid avenue and sprawling playgrounds and the verdure in and around the campus make it one of the most preferred choices for the aspirants of Engineering studies. The college has well qualified young and experienced Ph.Ds and M.Tech staff supported by Technical Staff.</p>
+        </article>
+    </details>
+</section>
+<footer>
+    <h2>CopyRight &copy; The Venkat Technologies </h2>
+    <p>All Rights Reserved</p>
+    <p>Developed & Maintained by Venkata Reddy</p>
+</footer>
+</body>
+</html>

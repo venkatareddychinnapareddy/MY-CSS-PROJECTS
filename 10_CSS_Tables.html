@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS TABLES</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS", sans-serif;
+
+        }
+        table,th,td{
+            text-align: center;
+            font-size: 20px;
+            padding: 13px;
+        }
+        th{
+            background-color: #bedad9;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #00FF00;
+            color: white;
+        }
+        tr:nth-child(odd){
+            background-color: #32CD32;
+            color: white;
+        }
+        th,td{
+            border-radius: 50px;
+        }
+        td:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CUSTOM TABLE -->
+    <table width="100%">
+        <tr>
+            <th>Employee Name</th>
+            <th>Designation</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>Venky</td>
+            <td>Software Engineer</td>
+            <td>Microsoft</td>
+        </tr>
+        <tr>
+            <td>Venor </td>
+            <td>Web Developer</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>Berlin</td>
+            <td>Astronut</td>
+            <td>ISRO</td>
+        </tr>
+        <tr>
+            <td>Denver</td>
+            <td>CEO</td>
+            <td>Google</td>
+        </tr>
+        <tr>
+            <td>Rio</td>
+            <td>President</td>
+            <td>Reliance</td>
+        </tr>
+        <tr>
+            <td>vicky</td>
+            <td>Doctorr</td>
+            <td>Apollo</td>
+        </tr>
+    </table>
+</body>
+</html>

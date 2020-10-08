@@ -1,0 +1,57 @@
+ul{
+	margin-top: 100px;
+	margin-left: 100px;
+}
+li{
+	width: 10px;
+	height: 10px;
+    display: inline-block;
+    background-color: black;
+    border-radius: 50%;
+    margin: 30px;
+    animation: glow 1.5s linear infinite;
+    border: 2px solid white; 
+}
+@keyframes glow{
+	0%, 50%, 75%, 100% {
+		transform: scale(0.3,0.3);
+	}
+	25%{
+		transform: scale(5,5);
+	}
+} 
+li:nth-child(1){
+	animation-delay: 0.1s;
+	background-color: blue;
+	box-shadow: 0 0 30px blue;
+}
+li:nth-child(2){
+	animation-delay: 0.2s;
+	background-color: red;
+	box-shadow: 0 0 30px red;
+}
+li:nth-child(3){
+	animation-delay: 0.3s;
+	background-color: orange;
+	box-shadow: 0 0 30px orange;
+}
+li:nth-child(4){
+	animation-delay: 0.4s;
+	background-color: teal;
+	box-shadow: 0 0 30px teal;
+}
+li:nth-child(5){
+	animation-delay: 0.5s;
+	background-color: green;
+	box-shadow: 0 0 30px green;
+}
+li:nth-child(6){
+	animation-delay: 0.6s;
+	background-color: salmon;
+	box-shadow: 0 0 30px salmon;
+}
+li:nth-child(7){
+	animation-delay: 0.7s;
+	background-color: darkred;
+	box-shadow: 0 0 30px darkred;
+}
